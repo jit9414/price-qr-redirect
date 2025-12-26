@@ -2,26 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Redirecting...</title>
+<title>Redirecting…</title>
+
+<!-- 🔴 META REFRESH (Google Lens friendly) -->
+<meta http-equiv="refresh"
+      content="0; url=https://script.google.com/macros/s/AKfycbx91kHDVy5R3-rX7b7Nolmh23TzR97V2KGHakQV5z69_jsWm92TbFgzPJYDJMf4vXCIjA/exec?id=1001">
 
 <script>
-  // 🔹 URL se product id uthao
-  const params = new URLSearchParams(window.location.search);
-  const productId = params.get("id");
-
-  // 🔹 AAPKA Apps Script base URL
-  const baseUrl = "https://script.google.com/macros/s/AKfycbx91kHDVy5R3-rX7b7Nolmh23TzR97V2KGHakQV5z69_jsWm92TbFgzPJYDJMf4vXCIjA/exec";
-
-  // 🔹 Agar id hai to redirect karo
-  if(productId){
-    window.location.replace(baseUrl + "?id=" + productId);
-  } else {
-    document.body.innerHTML = "<h3>Invalid product</h3>";
-  }
+  // 🔴 JS fallback (normal browsers)
+  window.location.replace(
+    "https://script.google.com/macros/s/AKfycbx91kHDVy5R3-rX7b7Nolmh23TzR97V2KGHakQV5z69_jsWm92TbFgzPJYDJMf4vXCIjA/exec?id=1001"
+  );
 </script>
 
 </head>
 <body>
-<p>Redirecting...</p>
+<p>Redirecting…</p>
 </body>
 </html>
