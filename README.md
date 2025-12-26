@@ -1,0 +1,1 @@
+# price-qr-redirect
